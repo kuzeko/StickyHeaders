@@ -3,29 +3,59 @@
  * Licensed under the BSD 3-clause license.
  */
 
-#standing {
-	margin: 0;
-	padding: 0;
-	position: fixed;
-	top: 0px;
-	width: 100%;
-	color: #039;
-	background-color:#ffe;
-	background-image: -moz-linear-gradient(top, #ffe, #ffc);
-	background-image: -webkit-linear-gradient(top, #ffe, #f0f0c0);
-	box-shadow:0px 0px 10px #111;
-}
 
-#standing .stand {
-	margin: 0;
-	padding: 2px;
-	display: block;
-	width: 100%;
-	height: 24px;
-	border-bottom: 1px dotted #e0e0a0;
-	font-size: 12px;
-	line-height: 24px;
-	text-align: center;
-	font-style: normal;
-	text-shadow: 0 1px 1px #fff;
-}
+/*_ Layout: Thou Shalt Not Change
+-------------------------------------------------------------------------------------------------------- */
+ #standing {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+ }
+
+
+ #standing .stand {
+  display: block;
+  margin: 0;
+  width: 100%;
+ }
+
+
+
+/*_ Presentation : If you like different colors...
+-------------------------------------------------------------------------------------------------------- */
+
+ #standing {
+  background-color: #ffe;
+  color: #039;
+  
+  /* css 3 */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe), to(#ffc));
+  background-image: -webkit-linear-gradient(top, #ffe, #ffc);
+  background-image: -moz-linear-gradient(top, #ffe, #ffc);
+  background-image: -o-linear-gradient(top, #ffe, #ffc);
+  background-image: -ms-linear-gradient(top, #ffe, #ffc);
+  background-image: linear-gradient(top, #ffe, #ffc);
+  -webkit-box-shadow: 0px 0px 10px #111;
+  -moz-box-shadow: 0px 0px 10px #111;
+  box-shadow: 0px 0px 10px #111; 
+ }
+ 
+ 
+ #standing .stand {
+  border-bottom: 1px dotted #e0e0a0;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 24px;
+  min-height: 24px;  
+  padding: 2px 0px;  
+  text-align: center;
+  
+  /* css 3 */
+  text-shadow: 0 1px 1px #fff;
+ }
+ 
+ 
+ 
+ 
