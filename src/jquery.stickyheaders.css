@@ -1,0 +1,31 @@
+/*!
+ * Copyright 2011 Matteo Lissandrini, Ragnis Armus
+ * Licensed under the BSD 3-clause license.
+ */
+
+#standing {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	color: #039;
+	background-color:#ffe;
+	background-image: -moz-linear-gradient(top, #ffe, #ffc);
+	background-image: -webkit-linear-gradient(top, #ffe, #f0f0c0);
+	box-shadow:0px 0px 10px #111;
+}
+
+#standing .stand {
+	margin: 0;
+	padding: 2px;
+	display: block;
+	width: 100%;
+	height: 24px;
+	border-bottom: 1px dotted #e0e0a0;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+	font-style: normal;
+	text-shadow: 0 1px 1px #fff;
+}
