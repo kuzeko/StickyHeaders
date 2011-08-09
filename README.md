@@ -7,16 +7,10 @@ Is a simple plugin for  [jQuery](http://www.jquery.com)  to have some piece of c
 Inspired by http://jsfiddle.net/trepmal/e7GN8/
 
 
-## Requirements 
+## Requirements
 
-Developed and tested with [jQuery version 1.6.2](http://code.jquery.com/jquery-1.6.2.js)  
+Developed and tested with [jQuery version 1.6.2](http://code.jquery.com/jquery-1.6.2.js)
 
 
-#TODO
 
-This section will be updated with things left to do:
-
-*   Cross browser compatibility test 
-*   Add link to headers such that they will scroll to the referred header
-*   Configure options e.g. element used for the #standing element, now `aside`
 
