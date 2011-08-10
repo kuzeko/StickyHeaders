@@ -1,74 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="../src/jquery.stickyheaders.css" type="text/css" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-	<script src="../src/jquery.stickyheaders.js"></script>
-	<script>
-		$(document).ready(function ()
-		{
-			$('h2').stickyheaders();
-		});
-	</script>
+  <!-- this is required for the standing effect, better to add this at the end of your stylesheets-->
+  <link rel="stylesheet" href="../src/jquery.stickyheaders.css" type="text/css" />
+  <!-- Just a little bit of typography -->
+  <link rel="stylesheet" href="http://type-a-file.com/taf-kickoff-s.css" type="text/css" />  
 
-	<style type="text/css">
-		body {
-			margin: 0;
-			padding: 0;
-			background-color: #f6f6f6;
-		}
 
-		article {
-			margin: 0 auto;
-			display: block;
-			width: 480px;
-		}
+  <!-- The Javascript! consider putting all these at the end of your html file for better performances-->
+  <!-- jQuery v. 1.6.2 -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <!-- the plugin -->
+  <script src="../src/jquery.stickyheaders.js"></script>
+  <script>
+    $(document).ready(function ()
+    {
+      /*--  You can apply the effect to any element you like in the page  --*/
+      $('h2').stickyheaders();
+    });
+  </script>
 
-		p {
-			margin-bottom: 170px;
-		}
-	</style>
+
+  <!-- Some presentational CSS-->
+  <style type="text/css">
+    body {
+      background-color: #f6f6f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    article {
+      display: block;
+      margin: 0 auto;
+      width: 480px;
+    }
+
+    p {
+      margin-bottom: 170px; /* Just to emphasize the effect ;) */
+    }
+  </style>
 </head>
 <body>
-	<article>
-		<header>
-			<h1> This is dummy copy.</h1>
-		</header>
+  <article>
+    <header>
+      <h1> This is dummy copy.</h1>
+    </header>
 
-		<h2>Only for show. </h2>
-		<p>
-			This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed. These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. Think of them merely as actors on a paper stage, in a performance devoid of content yet rich in form. That being the case, there is really no point in your continuing to read them. After all, you have many other things you should be doing. Who's paying you to waste this time, anyway?
-		</p>
+    <h2>Only for show. </h2>
+    <p>
+      This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed. These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. Think of them merely as actors on a paper stage, in a performance devoid of content yet rich in form. That being the case, there is really no point in your continuing to read them. After all, you have many other things you should be doing. Who's paying you to waste this time, anyway?
+    </p>
 
-		<h2> It's Greek to you. Unless, of course, you're Greek</h2>
-		<p>
-			This is dummy copy. It's Greek to you. Unless, of course, you're Greek, in which case, it really makes no sense. Why, you can't even read it! It is strictly for mock-ups. You may mock it up as strictly as you wish.
-		</p>
+    <h2> It's Greek to you. Unless, of course, you're Greek</h2>
+    <p>
+      This is dummy copy. It's Greek to you. Unless, of course, you're Greek, in which case, it really makes no sense. Why, you can't even read it! It is strictly for mock-ups. You may mock it up as strictly as you wish.
+    </p>
 
-		<h2>Meaningless mock-up</h2>
-		<p>
-			Meaningless mock-up, mock turtle soup spilled on a mock turtle neck. Mach I Convertible copy. To kill a mockingbird, you need only force it to read this copy.
-		</p>
-		<blockquote>
-			<p>
-				This is Meaningless filler. (Elvis movies.) It is not meant to be a forum for value judgments nor a scholarly diatribe on how virtue should be measured. The whole point here (if such a claim can be made in an admittedly pointless paragraph) is that this is dummy copy.
-			</p>
-		</blockquote>
+    <h2>Meaningless mock-up</h2>
+    <p>
+      Meaningless mock-up, mock turtle soup spilled on a mock turtle neck. Mach I Convertible copy. To kill a mockingbird, you need only force it to read this copy.
+    </p>
+    <blockquote>
+      <p>
+        This is Meaningless filler. (Elvis movies.) It is not meant to be a forum for value judgments nor a scholarly diatribe on how virtue should be measured. The whole point here (if such a claim can be made in an admittedly pointless paragraph) is that this is dummy copy.
+      </p>
+    </blockquote>
 
-		<h2>Real bullets explode with destructive intensity.</h2>
-		<p>
-			Real bullets explode with destructive intensity. Such is not the case with dummy bullets. In fact, they don't explode at all. Duds. Dull thuds. Dudley do-wrongs. And do-wrongs don't make a right. Why on earth are you still reading this? Haven't you realized it's just dummy copy? How many times must you be reminded that it's really not meant to be read? You're only wasting precious time. But be that as it may, you've got to throw in a short paragraph from time to time. Here's a short paragraph.
-		</p>
+    <h2>Real bullets explode with destructive intensity.</h2>
+    <p>
+      Real bullets explode with destructive intensity. Such is not the case with dummy bullets. In fact, they don't explode at all. Duds. Dull thuds. Dudley do-wrongs. And do-wrongs don't make a right. Why on earth are you still reading this? Haven't you realized it's just dummy copy? How many times must you be reminded that it's really not meant to be read? You're only wasting precious time. But be that as it may, you've got to throw in a short paragraph from time to time. Here's a short paragraph.
+    </p>
 
-		<h2> It breaks up the intimidating blocks</h2>
-		<p>
-			It breaks up the intimidating blocks of text and makes the page more inviting to read, which is again ironic, considering this is dummy copy. It is not meant to be read. Someday this space will be occupied by real copy that is meant to be read. What other form of filler would dare be so politically incorrect? This is dummy copy. It is not meant to be read. Good thing.
-		</p>
+    <h2> It breaks up the intimidating blocks</h2>
+    <p>
+      It breaks up the intimidating blocks of text and makes the page more inviting to read, which is again ironic, considering this is dummy copy. It is not meant to be read. Someday this space will be occupied by real copy that is meant to be read. What other form of filler would dare be so politically incorrect? This is dummy copy. It is not meant to be read. Good thing.
+    </p>
 
-		<h2>It is not meant to be read.</h2>
-		<p>
-			This is dummy copy. It is not meant to be read. Accordingly, it is difficult to figure out when to end it. If this were real copy, it would have ended long ago, because—as we all know—no one reads body copy, and even fewer read body copy this long. But then, this is dummy copy. It is not meant to be read. Period.
-		</p>
-	</article>
+    <h2>It is not meant to be read.</h2>
+    <p>
+      This is dummy copy. It is not meant to be read. Accordingly, it is difficult to figure out when to end it. If this were real copy, it would have ended long ago, because—as we all know—no one reads body copy, and even fewer read body copy this long. But then, this is dummy copy. It is not meant to be read. Period.
+    </p>
+  </article>
 </body>
 </html>
