@@ -9,7 +9,7 @@ Inspired by http://jsfiddle.net/trepmal/e7GN8/
 
 ## Requirements
 
-Developed and tested with [jQuery version 1.6.2](http://code.jquery.com/jquery-1.6.2.js)
+Developed and tested with [jQuery version 1.9.1](http://code.jquery.com/jquery-1.9.1.js)
 
 
 
