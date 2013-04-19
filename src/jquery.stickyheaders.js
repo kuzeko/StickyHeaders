@@ -1,6 +1,8 @@
 /*!
  * Copyright 2011 Matteo Lissandrini, Ragnis Armus
  * Licensed under the BSD 3-clause license.
+ * Modified by Andrew Kester.  Those changes (marked) are copyright 2013 and
+ * released under GNU-GPL v3
  */
 
 (function ($)
@@ -30,7 +32,14 @@
 			{
 				var $ref = $('#multisticky_' + id);
 
-				if ((dist + $standing.height() - 20)  >= $ref.data('from-top'))
+				var $next = $('#multisticky_' + (id + 1));
+				var $prev = $('#multisticky_' + (id - 1));
+				
+				var currentdist = dist + $standing.height() - 20
+
+				if ((currentdist  >= $ref.data('from-top'))
+						&& ( currentdist > $prev.data('from-top') - 20)
+						&& ( currentdist < $next.data('from-top') - 20))
 				{
 					$ref.slideDown();
 				}
